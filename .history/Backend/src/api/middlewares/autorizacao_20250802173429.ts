@@ -1,0 +1,1 @@
+//Algoritmo de autorizacao de acesso

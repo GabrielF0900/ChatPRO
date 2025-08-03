@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",           // ok, suporta ES Modules no Node.js 16+
+    "target": "ESNext",             // ótimo para usar recursos modernos
+    "lib": ["ESNext"],              // biblioteca de tipos atualizada
+    "types": ["node"],              // tipos do Node
+
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    "strict": false,
+    "noImplicitAny": false,
+
+    "verbatimModuleSyntax": false, // importante para evitar erro TS1295
+
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+
+    // Opcional, mas recomendável para projetos Node.js modernos:
+    "rootDir": "./src",
+    "outDir": "./dist"
+  },
+  "include": ["src"]
+}

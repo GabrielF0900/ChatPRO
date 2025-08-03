@@ -1,0 +1,18 @@
+//Middleware de autenticação
+
+//Esse middleware verifica se o usuario é quem ele diz ser.
+
+import { Request, Response, NextFunction } from 'express';
+import jwt from 'jsonwebtoken';
+
+export function autenticacao(req: Request, res: Response, next: NextFunction) {
+    // Extrair o token do cabeçalho Authorization
+    const authHeader = req.headers.authorization;
+    // Verificar se o token está presente
+    if (!authHeader) {
+        return res.status(401).json({ erro: 'Token não fornecido' });
+    }
+
+    //Pegando o token extraido e verificando a identidade do usuario pelo role
+    if(token.role )
+}

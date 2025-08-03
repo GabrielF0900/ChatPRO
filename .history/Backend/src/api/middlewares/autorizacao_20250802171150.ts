@@ -1,0 +1,5 @@
+// Middleware de autorização
+
+//O middleware de autorização cuida das permissoes de acesso das rotas.
+
+import { Request, Response, NextFunction } from 'express';

@@ -1,0 +1,1 @@
+//Estendendo a tipagem do express para incluir o usuário autenticado
