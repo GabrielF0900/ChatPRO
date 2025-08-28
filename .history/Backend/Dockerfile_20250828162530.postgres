@@ -1,0 +1,12 @@
+# Dockerfile para PostgreSQL
+FROM postgres:16
+
+# Define variáveis de ambiente padrão (altere conforme necessário)
+ENV POSTGRES_DB=chatpro_db
+ENV POSTGRES_USER=chatpro_user
+ENV POSTGRES_PASSWORD=chatpro_pass
+
+# (Opcional) Copie scripts de inicialização, se necessário
+# COPY ./init.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 5432
